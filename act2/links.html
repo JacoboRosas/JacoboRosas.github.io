@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Elemento &lta&gt</h1>
+<h2>¿Para que se utiliza &lta&gt?</h2>
+<p><b>La etiqueta HTML &lta&gt define un hipervínculo. <br>
+<br>La etiqueta tiene la siguiente sintaxis:
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="url"</span>&gt <span class="marcado"></span><span class="marcado3">texto_del_enlace</span> &lt/a&gt
+<hr>
+El texto del enlace es la parte que será visible para el usuario. <br><br>
+Al hacer clic en el texto del enlace, se enviará al usuario a la dirección URL especificada.
+
+<h3>Ejemplo</h3>
+Un ejemplo utilizando el enlace de la página del TEC es el siguiente:
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="https://tijuana.tecnm.mx/""</span>&gt <span class="marcado"></span><span class="marcado3">Página del TEC.</span> &lt/a&gt
+<hr>
+Este código da el siguiente resultado:
+<a href="https://tijuana.tecnm.mx/">
+Página del TEC.
+</a>
+<h2>El atributo href</h2>
+El atributo más importante del elemento <span class="marcado">&lta&gt</span> es el atributo <span class="marcado">href</span>, debido a que indica el destino del enlace.
+<br>
+Si el atributo <span class="marcado">href </span>no está presente, la etiqueta <a> no será un enlace.
+
+<h2>El atributo target</h2>
+
+Por default, la página vinculada se mostrará en la ventana actual del navegador. Para cambiar esto, debe especificar otro destino para el vínculo.
+<br>
+Es aquí donde entra el atributo <span class="marcado">target</span>, el cual especifica donde abrir el documento vinculado. El atributo <span class="marcado">target</span> puede tener uno de los siguientes valores:
+<ul><b>
+  <li><span class="marcado">_self.</span> La opción por defecto, abre el documento en la misma ventana/pestaña en la que se hizo clic.</li>
+  <li><span class="marcado">_blank.</span> Abre el documento en una nueva ventana o pestaña.</li>
+  <li><span class="marcado">_parent.</span> Abre el documento en el marco principal.</li>
+  <li><span class="marcado">_top.</span> Abre el documento en el cuerpo completo de la ventana.</li>
+  </b>
+</ul>
+<h3>Ejemplo</h3>
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="https://tijuana.tecnm.mx/"</span><span class=marcado> target="_blank"</span>"</span>&gt <span class="marcado"></span><span class="marcado3">Página del TEC.</span> &lt/a&gt
+<hr>
+
+<h2>Imagenes como enlaces</h2>
+
+Para poder utilizar imagenes como enlaces para acceder a otros sitios web, necesitamos colocar la etiqueta &ltimg&gt dentro de la etiqueta &lta&gt. Ejemplo: <br>
+<hr>
+&lta <span class="marcado">href="https://tijuana.tecnm.mx/"</span>&gt<br>
+&ltimg src="tecnm.png" alt="LogoTec"&gt<br>
+&lt/a&gt
+<hr>
+<a href="https://tijuana.tecnm.mx/">
+<img src="tecnm.png" alt="LogoTec" width="200" height="200">
+</a>
+
+<p>Haga clic en en logo para ir a la página del TEC.</p>
+
+<h2>Referencias absolutas y relativas</h2>
+Una referencia absoluta es aquella que tiene una URL completa de la página a la que se esta vinculando. Por el otro lado, una referencia relativa es un link local por lo que no utiliza toda la URL.
+<h3>Ejemplo referencia absoluta</h3>
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="https://tijuana.tecnm.mx/""</span>&gt <span class="marcado"></span><span class="marcado3">Página del TEC.</span> &lt/a&gt
+<hr>
+<h3>Ejemplo referencia relativa</h3>
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="imagenes.html"</span>&gt <span class="marcado"></span><span class="marcado3">Elemento &ltimg&gt.</span> &lt/a&gt
+<hr>
+<a href="https://tijuana.tecnm.mx/">
+Referencia absoluta (Lleva al sitio del TEC).
+</a>
+<br>
+<br>
+<a href="imagenes.html">
+Referencia relativa (Lleva a la página del elemento img).
+</a>
+<h2>Titulos en enlaces</h2>
+El atributo de <span class="marcado">title</span> especifica información adicional sobre un elemento. La información generalmente se muestra como un texto de información sobre herramientas cuando el mouse se mueve sobre el elemento.
+<h3>Ejemplo</h3>
+<hr>
+&lt<span class="marcado2">a</span> <span class="marcado">href</span><span class="marcado3">="https://www.google.com"</span><span class=marcado> title="Ir a Google"</span>"</span>&gt <span class="marcado"></span><span class="marcado3">Página de Google.</span> &lt/a&gt
+<hr>
+Este código mostraria el siguiente enlace. Si se pasa el cursor encima, mostrará un texto:<br>
+<a href="https://www.google.com" title="Ir a Google"> <br>
+Sitio de Google.
+</a>
+</body>
+</html>

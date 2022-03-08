@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Elemento &ltp&gt</h1>
+<h2>¿Qué es paragraph (párrafo)?</h2>
+<p><b>En HTML, un párrafo es un elemento que siempre comienza en una nueva línea y suele ser un bloque de texto.
+.</b></p>
+
+<h2>¿Cómo se definen los párrafos?</h2>
+<p><b>Los párrafos se definen con la etiqueta <span class="marcado">&ltp&gt</span>.</b></p>
+
+<h3>Ejemplo de su uso</h3>
+<p><b>Si utilizamos el siguiente código:</b></p>
+<span class="marcado">&ltp&gt</span> Primer parrafo. <span class="marcado">&lt/p&gt</span><br>
+<span class="marcado">&ltp&gt</span> Segundo parrafo. <span class="marcado">&lt/p&gt</span><br>
+
+<p><b>Nos dará el siguiente resultado:</b></p> 
+<hr>
+<p>Este es el primer texto de ejemplo.</p>
+<p>Este es el segundo texto de ejemplo.</p>
+<hr>
+
+<h2>Visualización de párrafos en HTML</h2>
+<p><b>Al utilizar la etiqueta <span class="marcado">&ltp&gt</span>, no podemos
+ estar seguros de como se visualizara dentro de una página, ya que existen diferentes
+ factores que podrían afectarle, como por ejemplo, pantallas grandes o pequeñas, resolución de la ventana, etc. <br>Sin embargo, si intentamos agregar espacios o líneas extras en nuestro código
+ HTML el navegador automaticamente eliminará estos espacios y líneas extras cuando se visualicen en la página. <br><br> Un ejemplo de esto es al utilizar el siguiente código: </b></p>
+<span class="marcado">&ltp&gt</span><br> Este párrafo <br>
+contiene muchas líneas<br>
+en el código fuente,<br>
+pero el navegador<br>
+las ignora. <br>
+<span class="marcado">&lt/p&gt</span><br></p>
+
+<span class="marcado">&ltp&gt</span><br> Este párrafo <br>
+contiene &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+muchos espacios<br>
+en el código &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ fuente,<br>
+pero el &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ navegador<br>
+las ignora. <br>
+ <span class="marcado">&lt/p&gt</span><br></p>
+
+<p><b>Se mostrará el siguiente resultado, donde ignora por completo los espacios:</b></p>
+
+<hr>
+<p>
+Este párrafo
+contiene muchas líneas
+en el código fuente,
+pero el navegador
+las ignora.
+</p>
+<p>
+Este párrafo
+contiene                   muchos espacios
+en el código                 fuente,
+pero el             navegador
+las ignora.
+</p>
+<hr>
+
+<h2>La etiqueta &lthr&gt </h2>
+<p><b>Esta etiqueta define una ruptura temática en una página HTML y, con mayor frecuencia, se muestra como una línea horizontal.
+Su uso más común es para separar contenido dentro de una página.<br> Ejemplos de su uso estan dentro de esta página, la etiqueta fue utilizada para separar los resultados al utilizar cierto código, como se muestra en la siguiente imagen: </b></p>
+
+<img src="EjemploHR.png" alt="EjemploHR">
+
+
+<h2>Saltos de línea </h2>
+<p><b>Para poder hacer saltos de línea en un párrafo, es necesario hacer uso de la etiqueta <span class="marcado">&ltbr&gt</span>. Un ejemplo de su uso es con el siguiente código:</b></p>
+<span class="marcado">&ltp&gt</span> Texto de  <span class="marcado">&ltbr&gt</span> ejemplo. <span class="marcado">&lt/p&gt</span><br>
+<p><b>El cual mostraria el siguiente resultado:</b></p>
+
+<hr>
+<p> Texto de <br> ejemplo </p>
+<hr>
+
+<h2>La etiqueta &ltpre&gt </h2>
+<p><b>El texto dentro de un elemento <span class="marcado">&ltpre&gt</span> conserva tanto los espacios como los saltos de línea. </b></p>
+<h3>Ejemplo de su uso</h3>
+
+<p><b>Si utilizamos el siguiente código:</b></p>
+<hr>
+<span class="marcado">&ltpre&gt</span>
+<p>&nbsp&nbspEjemplo de texto </p>
+<p>&nbsp&nbspEsto es un ejemplo </p>
+<p>&nbsp&nbspEste es otro ejemplo</p>
+<p>&nbsp&nbspÚltimo ejemplo</p>
+<span class="marcado">&lt/pre&gt</span>
+<hr>
+<p><b>Mostrará el siguiente resultado:</b></p>
+<pre>
+  Ejemplo de texto
+  
+  Esto es un ejemplo
+  
+  Este es otro ejemplo
+  
+  Último ejemplo
+</pre>
+
+</body>
+</html>

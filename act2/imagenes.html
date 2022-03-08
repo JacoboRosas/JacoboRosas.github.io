@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Imagenes</h1>
+
+<h2>La etiqueta &ltimg&gt </h2>
+<p><b>Las imágenes son muy importantes, ya que pueden mejorar el diseño y la apariencia de una página web. <br>
+</p></b>
+<h3>Sintaxis</h3>
+
+<p><b> 
+Para poder agregar imagenes a una página, se tiene que hacer uso de la etiqueta <span class="marcado">&ltimg&gt</span>.
+Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas web.<br> La etiqueta <img> crea un espacio de espera para la imagen a la que se hace referencia. Para usarse, se utiliza la siguiente sintaxis:
+</p></b>
+<p><b>
+<hr>
+&lt<span class="marcado2">img</span> <span class="marcado">src</span><span class="marcado3">="url"</span> <span class="marcado">alt</span><span class="marcado3">="textoalterno"</span>&gt
+<hr>
+</p></b>
+
+<h3>Atributos de la etiqueta &ltimg&gt: src y alt</h3>
+<h3>src</h3>
+<p><b>El primer atributo es conocido como src, este atributo es importante debido a que especifica la ruta donde se ubica la imagen. Un ejemplo de como se utiliza este atributo es el siguiente: </p></b>
+<p><b>
+<hr>
+&ltimg <span class="marcado">src="pizza.jpg"</span> alt="Pizza"&gt
+<hr>
+<p><b>
+En este caso, como la imagen se ubica en el mismo directorio que la página, solo se escribe el nombre de la imagen dentro del directorio.
+</p></b>
+
+<h3>alt</h3>
+<p><b>El segundo atributo, alt, proporciona un texto alternativo para una imagen, en caso de que el usuario por algún motivo no puede verla. El valor de este atributo debe describir la imagen. <br>Un ejemplo de como se utiliza este atributo es el siguiente:<br>
+</p></b>
+
+<p><b>
+<hr>
+&ltimg src="pizza.jpg" <span class="marcado">alt="Pizza"</span>&gt
+<hr>
+</p></b>
+
+<p><b>La imagen que se utilizo es la siguiente:</p></b>
+<img src="pizza.jpg" alt="Pizza"><br>
+<p><b>Para mostrar bien el atributo, escribí incorrectamente la ruta de la imagen, por lo que se muestra lo siguiente:</p></b>
+<img src="pizzaa.jpg" alt="Pizza">
+
+<h2>Tamaño de imagen</h2>
+
+<p><b>
+Para poder modificar el tamaño de una imagen existen dos alternativas:
+</p></b>
+<h3>Atributo style</h3>
+
+<p><b>
+Este atributo no solo es utilizado para modificar el tamaño de imagenes, sino que se utiliza en muchas otras cosas. <br> Sin embargo, en el contexto de modificar el tamaño de imagenes, se utiliza de la siguiente forma:
+</p></b>
+
+<p><b>
+<hr>
+&ltimg src="pizza.jpg" alt="Pizza" <span class="marcado">style="width:200px;height:200px;"</span>&gt
+<hr>
+</p></b>
+
+<h3>Atributo width y height</h3>
+
+<p><b>
+Estos atributos cumplen la misma función, modificar el tamaño de una imagen, por lo que es una alternativa a style:
+</p></b>
+
+<p><b>
+<hr>
+&ltimg src="pizza.jpg" alt="Pizza" <span class="marcado">width="200" height="200"</span>&gt
+<hr>
+</p></b>
+
+<p><b>
+Utilizando la misma imagen de pizza como ejemplo, si aplicamos cualquiera de los dos métodos para modificar su tamaño, se mostraría de la siguiente forma:
+</p></b>
+</b>
+<img src="pizza.jpg" alt="Pizza" width="200" height="200">
+<br>
+
+<h2>Imagenes en otra carpeta</h2>
+<p><b>
+Si la imagen que se desea mostrar esta ubicada en una subcarpeta, es necesario incluir el nombre de la carpeta en el atributo src. Ejemplo: <br>
+<hr>
+&ltimg <span class="marcado">src="imagenes/gato.jpg"</span> alt="Gato" style="width:200px;height:200px;"&gt
+<hr>
+</p></b>
+<img src="img/cat.jpg" alt="Gato" width="200" height="200">
+
+<h2>Imagenes de otro servidor/sitio</h2>
+
+<p><b>
+Si la imagen que se desea mostrar esta ubicada en otro servidor o sitio web, es necesario especificar la URL completa en el atributo src. Ejemplo: <br>
+<hr>
+&ltimg <span class="marcado">src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg"</span> alt="Ojo" style="width:200px;height:200px;"&gt
+<hr>
+</p></b>
+<img src="https://cdn.pixabay.com/photo/2020/06/01/22/23/eyes-5248678_960_720.jpg" alt="Ojo" width="200" height="200">
+
+<h2>Imagenes animadas</h2>
+<p><b>
+HTML nos permite utilizar GIFs animados. Ejemplo: <br>
+<hr>
+&ltimg <span class="marcado">src="GIF.gif"</span> alt="Animación"&gt
+<hr>
+</p></b>
+<img src="GIF.gif" alt="Animación" width="200" height="200">
+
+<h2>Imagenes como enlaces</h2>
+<p><b>
+Para poder utilizar imagenes como enlaces para acceder a otros sitios web, necesitamos colocar la etiqueta &ltimg&gt dentro de la etiqueta &lta&gt. Ejemplo: <br>
+<hr>
+&lta <span class="marcado">href="https://tijuana.tecnm.mx/"</span>&gt<br>
+&ltimg src="tecnm.png" alt="LogoTec"&gt<br>
+&lt/a&gt
+<hr>
+</p></b>
+<a href="https://tijuana.tecnm.mx/">
+<img src="tecnm.png" alt="LogoTec" width="200" height="200">
+</a>
+
+<p>Haga clic en en logo para ir a la página del TEC.</p>
+
+<h2>Imagenes de fondo</h2>
+<p><b>
+Las imagenes pueden ser utilizadas como fondo de un elemento o un fondo de una página.  <br>
+
+<h3>Fondo en un elemento</h3>
+Para utilizar imagenes como fondo de un elemento, por ejemplo un párrafo, se tiene que utilizar el atributo style de la siguiente manera:
+<hr>
+&ltp <span class="marcado">style="background-image: url('fondo1.png')"</span>&gt<br>
+<hr>
+</p></b>
+<p style="background-image: url(fondo1.jpg)"><b> Este parrafo <br> 
+tiene un fondo<br>
+gracias al atributo<br>
+style.</b></p>
+
+<h3>Fondo en una página</h3>
+<p><b>
+Si lo que se desea es utilizar una imagen como fondo para una página entera, se tiene que utilizar nuevamente el atributo style para poder realizar esto. <br>
+Esto se hace especificando la imagen que deseamos utilizar de fondo en el elemento &ltbody&gt:
+
+<hr>
+&ltstyle&gt<br>
+body {
+<span class="marcado"><br>
+&nbsp&nbsp&nbsp&nbspbackground-image: url('fondo1.png')"
+</span>
+<br>
+}<br>
+&lt/style&gt
+<hr>
+</p></b>
+<p><b>
+Para poder observar como se miraria un fondo en esta página, haga clic en la siguiente imagen:
+</p></b>
+<a href="fondo.html">
+<img src="box.png" alt="Caja" width="200" height="200">
+</a>
+</p></b>
+<h3>Mapeo de imagen</h3>
+<p><b>
+La etiqueta conocida como <span class="marcado">&ltmap&gt</span> permite definir un mapa de imagen. Un mapa de imagen es una imagen con áreas en las que se puede hacer clic. Las áreas se definen con una o más etiquetas <span class="marcado">&ltarea&gt</span>.<br>
+Un ejemplo de como se utilizan las etiquetas, es con la siguiente imagen:
+<hr>
+<img src="examplecode.png" alt="Ejemplo">
+<hr>
+<p><b>
+Un ejemplo de una imagen con mapeo es la siguiente, si hace clic en las partes marcadas con azul, lleva a otro sitio:
+</p></b>
+<img src="ReticulaSistemas.png" alt="Reticula" usemap="#image-map">
+<map name="image-map">
+    <area target="_blank" alt="Lenguajes y Automatas 2" title="Lenguajes y Automatas 2" href="https://drive.google.com/file/d/1bz-LtpHNL4460NTM7XSWJdwn_BTJ1kgE/view" coords="705,89,803,146" shape="rect">
+    <area target="_blank" alt="Inteligencia Artificial " title="Inteligencia Artificial " href="https://drive.google.com/file/d/1iZoCBlE6KpGc3P543wgzu92H1IZj8IV-/view" coords="931,90,1029,145" shape="rect">
+    <area target="_blank" alt="Conmutación y Enrutamiento en Redes de Datos " title="Conmutación y Enrutamiento en Redes de Datos " href="https://drive.google.com/file/d/1mTnhY7-wL7rOyja0L-LFL07iks64GNO-/view" coords="705,176,802,233" shape="rect">
+    <area target="_blank" alt="Administración de Redes" title="Administración de Redes" href="https://drive.google.com/file/d/1XTUYYySu1KCh0dMOkLIFop1DcMhdgDlG/view" coords="818,177,915,233" shape="rect">
+    <area target="_blank" alt="Taller de Investigación 2" title="Taller de Investigación 2" href="https://drive.google.com/file/d/1fz7hn_mdCBHFbGHXIfJ3WoWakbWwEUW8/view" coords="818,264,915,320" shape="rect">
+    <area target="_blank" alt="Ingenieria de Software" title="Ingenieria de Software" href="https://drive.google.com/file/d/1UgIrfM_NaZb-P5XOSBXTQl6VlOPlBGs4/view" coords="591,438,689,493" shape="rect">
+    <area target="_blank" alt="Programación Web" title="Programación Web" href="https://drive.google.com/file/d/1M7QWK4Yr0zglf0OGwDtstTNNv09MrSPL/view" coords="818,439,915,494" shape="rect">
+</map>
+</p></b>
+
+</body>
+</html>

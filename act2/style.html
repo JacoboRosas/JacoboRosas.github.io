@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Atributo style</h1>
+<h2>¿Para que se utiliza style?</h2>
+<p><b>El atributo global de estilo contiene declaraciones de estilo CSS que se aplicarán al elemento. Tenga en cuenta que se recomienda que los estilos se definan en un archivo o archivos separados. Este atributo y el elemento <span class=marcado>style</span> tienen principalmente el propósito de permitir un estilo rápido, por ejemplo, con fines de prueba.
+<h3>Ejemplo dentro de un elemento</h3>
+<hr>
+&lt<span class="marcado2">h1</span> <span class="marcado">style</span><span class="marcado3">="color:blue;text-align:center;"&gtThis is a header&lt/h1</span>&gt
+<br>
+&lt<span class="marcado2">p</span> <span class="marcado">style</span><span class="marcado3">="color:green;"&gtThis is a paragraph.&lt/p</span>&gt
+<hr>
+Utilizar este código da el siguiente resultado:
+<h1 style="color:blue;text-align:center;">Esto es un encabezado</h1>
+<p style="color:green;">Esto es un párrafo.</p>
+
+<h2>Implementación del atributo style</h2>
+Existen tres formas distintas de utilizar el atributo style:
+<ul><b>
+  <li>En línea: mediante el uso del atributo de estilo dentro de los elementos HTML.</li>
+  <li>Interno: mediante el uso de un elemento &ltstyle&gt en la sección &lthead&gt.</li>
+  <li>Externo: mediante el uso de un elemento &ltlink&gt para vincular a un archivo CSS externo.</li>
+ </b>
+</ul>
+La forma más común de agregar CSS es mantener los estilos en archivos CSS externos.
+
+<h2>CSS En línea</h2>
+Se utiliza un CSS en línea para aplicar un estilo único a un único elemento HTML. Un CSS en línea usa el atributo de estilo de un elemento HTML.
+<br>
+El ejemplo anterior donde se modifica el color del encabezado y el párrafo son ejemplos de CSS en línea. 
+<hr>
+&lt<span class="marcado2">h1</span> <span class="marcado">style</span><span class="marcado3">="color:blue;text-align:center;"&gtThis is a header&lt/h1</span>&gt
+<br>
+&lt<span class="marcado2">p</span> <span class="marcado">style</span><span class="marcado3">="color:green;"&gtThis is a paragraph.&lt/p</span>&gt
+<hr>
+<h2>CSS Interno</h2>
+Se utiliza un CSS interno para definir un estilo para una sola página HTML.<br>
+Un CSS interno se define en la sección &lthead&gt de una página HTML, dentro de un elemento &ltstyle&gt.
+<h3>Ejemplo</h3>
+<hr>
+<img src="ejemplointerno.png" alt="EjemploInterno">
+<hr>
+
+
+
+<h2>CSS Externo</h2>
+Se utiliza una hoja de estilo externa para definir el estilo de muchas páginas HTML.
+Para usar una hoja de estilo externa, es necesario agregar un enlace en la sección &lthead&gt de cada página HTML:
+<h3>Ejemplo</h3>
+<hr>
+<img src="ejemploexterno.png" alt="EjemploEnterno">
+<br>La hoja de estilo externa se puede escribir en cualquier editor de texto. El archivo no debe contener ningún código HTML y debe guardarse con una extensión .css.
+<br><br>
+<img src="style.png" alt="EjemploStyle">
+<hr>
+
+<h2>Bordes</h2>
+La propiedad de borde crea un borde alrededor de un elemento HTML. 
+<h3>Ejemplo</h3>
+<hr>
+<span class="marcado2">p</span> { <br>
+ &nbsp&nbsp&nbsp<span class="marcado">border</span>: <span class="marcado3">2px solid powderblue</span>;<br>
+}
+<hr>
+El código previo se miraria de la siguiente forma:
+</p></b>
+<p class="borde">Texto de ejemplo</p>
+
+<h2>Relleno</h2>
+La propiedad de relleno CSS define un relleno (espacio) entre el texto y el borde.
+<h3>Ejemplo</h3>
+<hr>
+<span class="marcado2">p</span> { <br>
+ &nbsp&nbsp&nbsp<span class="marcado">border</span>: <span class="marcado3">2px solid powderblue</span>;<br>
+ &nbsp&nbsp&nbsp<span class="marcado">padding</span>: <span class="marcado3">30px</span>;<br>
+
+}
+<hr>
+El código previo se miraria de la siguiente forma:
+</p></b>
+<p class="relleno">Texto de ejemplo</p>
+
+<h2>Margen</h2>
+La propiedad de margen CSS define un margen (espacio) fuera del borde.
+<h3>Ejemplo</h3>
+<hr>
+<span class="marcado2">p</span> { <br>
+ &nbsp&nbsp&nbsp<span class="marcado">border</span>: <span class="marcado3">2px solid powderblue</span>;<br>
+ &nbsp&nbsp&nbsp<span class="marcado">margin</span>: <span class="marcado3">50px</span>;<br>
+
+}
+<hr>
+El código previo se miraria de la siguiente forma:
+</p></b>
+<p class="margen">Texto de ejemplo</p>
+<p class="margen">Texto de ejemplo</p>
+</body>
+</html>
