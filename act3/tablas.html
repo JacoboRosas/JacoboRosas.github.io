@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="marcado">Creación de tablas en HTML</h1>
+<h2 class="blanco">¿Cómo se crea una tabla?</h2>
+<p class="blanco">Como bien se sabe, una tabla consta de celdas de tabla dentro de filas y columnas, en HTML, 
+esto se define con las etiquetas <span class="marcado">&lttable&gt</span>, <span class="marcado">&lttr&gt</span>, 
+<span class="marcado">&ltth&gt</span>, <span class="marcado">&lttd&gt</span>
+para ver detalladamente como se crean dentro de HTML, se mostrará el siguiente código:</p>
+<img src="imagenes/t1.png">
+
+<p class="blanco">Al utilizar este código, nos da la siguiente tabla:</p>
+<table class="borde">
+  <tr class="borde">
+    <th class="borde">Producto</th>
+    <th class="borde">Precio</th>
+    <th class="borde">Cantidad</th>
+  </tr>
+  <tr class="borde">
+    <td class="borde">Galletas</td>
+    <td class="borde">$15</td>
+    <td class="borde">48</td>
+  </tr>
+  <tr class="borde">
+    <td class="borde">Plumas</td>
+    <td class="borde">$5</td>
+    <td class="borde">27</td>
+  </tr>
+</table>
+
+
+
+<h3 class="blanco">Celdas de tabla</h3>
+<p class="blanco">Cada celda de la tabla está definida por una etiqueta <span class="marcado">&lttd&gt</span> y <span class="marcado">&lt/td&gt</span>.
+Para visualizar esta parte, tomando como ejemplo la tabla y el código anterior, se puede observar que dentro de 
+<span class="marcado">&lttd&gt</span> y <span class="marcado">&lt/td&gt</span> esta la información del producto, su precio, y la cantidad.</p>
+<img src="imagenes/t2.png">
+<img src="imagenes/t3.png">
+<p class="blanco"> Se puede ver claramente que esta información del código coincide con la que se muestra en la tabla.</p>
+<h3 class="blanco">Filas de tabla</h3>
+<p class="blanco">Cada fila de la tabla comienza con una etiqueta <span class="marcado">&lttr&gt</span> y termina con una etiqueta <span class="marcado">&lt/tr&gt</span>.
+Tomando como referencia el ejemplo anterior, se puede observar que antes de agregar contenido a las celdas con <span class="marcado">&lttd&gt</span> y <span class="marcado">&lt/td&gt</span>, primero se define una fila.</p>
+<img src="imagenes/t4.png">
+
+
+<h3 class="blanco">Encabezados de tabla</h3>
+<p class="blanco"> Para agregar encabezados a una tabla, es necesario hacer uso de <span class="marcado">&ltth&gt</span> y <span class="marcado">&lt/th&gt</span> en vez de <span class="marcado">&lttd&gt</span> y <span class="marcado">&lt/td&gt</span>, como tal, cumplen la misma función, agregar contenido a una celda, pero con <span class="marcado">&ltth&gt</span> y <span class="marcado">&lt/th&gt</span> el texto dentro de la celda estará marcado.
+<br>Tomando el ejemplo anterior, la celda que tiene el texto de producto, precio y cantidad utiliza un encabezado de tabla, como es posible observar en la siguiente imagen:</p>
+<img src="imagenes/t5.png">
+<p class="blanco"> Se puede ver claramente que esta información del código coincide con la que se muestra en la tabla.</p>
+
+
+</body>
+</html>
