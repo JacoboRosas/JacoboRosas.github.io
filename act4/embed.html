@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Actividad HTML: Lector-Visor PDF embebido en HTML</h1>
+<h2>Nombre: Jacobo Rosas Jonathan Adalberto </h4>
+<h2>Número de control: 18212201 </h4>
+
+<h3>¿Cómo agregar un lector-visor de documentos dentro de mi página? </h3>
+<p>
+Para poder agregar un lector-visor de documentos dentro de una página, es necesario hacer uso de la etiqueta <span class="marcado"> &ltembed&gt </span>, la cual define un contenedor para un recurso externo, como una página web, una imagen, un reproductor multimedia o una aplicación complementaria. <br> Para esta actividad, se utilizará para mostrar un archivo pdf.
+</p>
+
+<p>Esta etiqueta tiene los siguientes parametros:
+<ul>
+  <li>src - Especifica la ruta del archivo externo a embeber.</li>
+  <li>type - Especifica la categoría del contenido embebido.</li>
+  <li>width - Expecifica el ancho del contenido embebido.</li>
+  <li>height - Especifica el alto del contenido embebido.</</li>
+</ul>
+</p>
+<p>Alternativamente, se puede utilizar la etiqueta <span class="marcado"> &ltiframe&gt </span>. </p>
+
+<h3>Utilizando la etiqueta <span class="marcado"> &ltembed&gt </span></h3>
+<p>Una vez sabemos la función de la etiqueta, lo que sigue del procedimiento es sencillo, solo es necesario saber el nombre y dirección del archivo pdf que deseamos mostrar, en este caso, el nombre del archivo es LYA2.pdf y se encuentra en el directorio donde se esta la página, por lo que solo es necesario escribir su nombre en el atributo src de la etiqueta <span class="marcado"> &ltembed&gt </span></h3> 
+, indicar el tipo de contenido, y el ancho y alto que deseamos utilizar.</p>
+<p>Para podar mostrar el visor PDF en está página, se utilizará el siguiente código: 
+<br>
+<hr>
+<span class = "blanco">&ltembed src="<span class="marcado">LYA2.pdf</span>" type="<span class="marcado">application/pdf</span>" width="<span class="marcado">800px</span>" height="<span class="marcado">800px"</span>/&gt</span>
+<hr>
+</p>
+<p>Este código muestra el siguiente archivo:</p>
+
+
+<embed src="LYA2.pdf" type="application/pdf" width="800PX" height="800px"/>
+<p>Como es posible observar, al utilizar este código, se puede mostrar el archivo sin problemas de una forma sencilla.</p>
+<h3>La etiqueta <span class="marcado"> &ltiframe&gt </span></h3>
+<p>La otra alternativa es utilizar la etiqueta <span class="marcado"> &ltiframe&gt </span>, la cual también nos permitirá mostrar un archivo pdf dentro de nuestra página.
+<br>Para esto, se utilizará el siguiente código:</p>
+<hr>
+<span class = "blanco">&ltiframe src="<span class="marcado">LYA2.pdf</span>" type="<span class="marcado">application/pdf</span>" width="<span class="marcado">800px</span>" height="<span class="marcado">800px"</span>/&gt</span>
+<hr>
+<p>Esto mostraria lo mismo que la etiqueta <span class="marcado"> &ltembed&gt </span>, por lo que solo basta con observar el ejemplo anterior para ver el resultado.</p>
+</body>
+</html>
