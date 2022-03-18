@@ -10,3 +10,16 @@ h4 {
 p {
   color: #8B0000;
 }
+.black{
+	color:black;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 800px;
+  padding: 1%;
+}
