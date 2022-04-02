@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+    background: url(45degreee_fabric.png) repeat 0 0;
+}
+
+h1 {
+  color: #00008B;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+footer {
+  background-color: transparent;
+  margin-top: -0.5em;
+  padding: 2em;
+  position: fixed; 
+  left: 50%;
+  transform:translateX(-50%);
+  bottom: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: #00008B;
+}
+h3 {
+  color: #00008B;
+}
+p {
+  color: black;
+}
+.ejemplos {
+   color:black;
+}
+.marcado {
+	color:red;
+}
+.marcado2 {
+	color:#B22222;
+}
+.marcado3 {
+	color:#0000CD;
+}
+.fondoejemplo{
+	background-image:url('fondo1.jpg');
+}
+.black{
+	color:black;
+}
+.borde {
+   border: 2px solid black;
+}
+.relleno {
+   border: 2px solid black;
+   padding:30px;
+}
+.margen {
+   border: 2px solid black;
+   margin:50px;
+}
